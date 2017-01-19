@@ -1,13 +1,14 @@
-// grade 0 (strongly agree) to 5 (strongly disagree)
-
 var grade = 0;
-var indexString = '1';
+var remark = "";
+// script logic
+var indexString;
 for (var i = 1; i < 15; i++) {
-  if(i<10){
-    indexString = '0'+i;
-  }else{
-    indexString = '' + i;
-  }
+  indexString = (i<10)?'0'+i:i;
   document.getElementById('objRptr_ctl'+indexString+'_grade_'+grade).click();
 }
+// remark
+document.getElementById('rmrk').innerHTML = remark;
+// sumbit
 document.getElementById('pstEvalBtn').click();
+// logging success
+console.log('Academic evaluated successfully.');
