@@ -16,3 +16,5 @@ document.getElementById('RadioButtonList3_'+amountOfWork).click();
 document.getElementById('rmrk').innerHTML = remark;
 // sumbit
 document.getElementById('pstEvalBtn').click();
+// logging success
+console.log('Course evaluated successfully');
