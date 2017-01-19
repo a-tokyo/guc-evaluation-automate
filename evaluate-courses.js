@@ -1,3 +1,4 @@
+// user customizable inputs
 var grade = 0;
 var attendance = 0;
 var studyTime = 5;
