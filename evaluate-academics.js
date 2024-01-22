@@ -1,15 +1,16 @@
 // user customizable inputs
-var grade = 0;
+var grade = 1;
 var remark = "";
 // script logic
 var indexString;
-for (var i = 1; i < 15; i++) {
-  indexString = (i<10)?'0'+i:i;
-  document.getElementById('objRptr_ctl'+indexString+'_grade_'+grade).click();
+for (var i = 0; i < 14; i++) {
+  indexString = i;
+  document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_objRptr_grade_'+indexString+'_'+grade+'_'+indexString).click();
 }
 // remark
-document.getElementById('rmrk').innerHTML = remark;
-// sumbit
-document.getElementById('pstEvalBtn').click();
+document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_rmrk').innerHTML = remark;
+
+// submit
+//document.getElementById('pstEvalBtn').click();
 // logging success
 console.log('Academic evaluated successfully.');
