@@ -1,21 +1,19 @@
 // user customizable inputs
-var grade = 0;
-var attendance = 0;
-var studyTime = 5;
+var grade = 1;
+var attendance = 2;
+var studyTime = 2;
 var amountOfWork = 2;
 var remark = "";
 // script logic
-var indexString;
-for (var i = 1; i < 20; i++) {
-  indexString = (i<10)?'0'+i:i;
-  document.getElementById('objRptr_ctl'+indexString+'_grade_'+grade).click();
+for (var i = 0; i < 19; i++) {
+  document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_objRptr_grade_'+i+'_'+grade+'_'+i).click();
 }
-document.getElementById('RadioButtonList1_'+attendance).click();
-document.getElementById('RadioButtonList2_'+studyTime).click();
-document.getElementById('RadioButtonList3_'+amountOfWork).click();
+document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_RadioButtonList1_'+attendance).click();
+document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_RadioButtonList2_'+studyTime).click();
+document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_RadioButtonList3_'+amountOfWork).click();
 // remark
-document.getElementById('rmrk').innerHTML = remark;
-// sumbit
-document.getElementById('pstEvalBtn').click();
+document.getElementById('ContentPlaceHolderright_ContentPlaceHoldercontent_rmrk').innerHTML = remark;
+// submit
+//document.getElementById('pstEvalBtn').click();
 // logging success
 console.log('Course evaluated successfully');
