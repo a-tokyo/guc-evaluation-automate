@@ -18,8 +18,8 @@ To open Google chrome's console right click on the form and click on inspect ele
 - var attendance = 0; // holds the attendance; 0 for always, 5 for almost never
 - var studyTime = 5; // hold the study time; 0 for 1 hour, 5 for 6 hours
 - var amountOfWork = 2; // holds the amount of work; 0 very great and 5 very low
-- If you don't want the form to be submitted automatically, remove the line:
-document.getElementById('pstEvalBtn').click();
+- If you want the form to be submitted automatically, uncomment the line:
+// document.getElementById('pstEvalBtn').click();
 
 ##### Disclaimer
 - These scripts are in no way affilated with the GUC itself, they're just a student activity to automate a time consuming process.
